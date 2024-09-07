@@ -23,9 +23,23 @@
                 <iframe src="https://ghbtns.com/github-btn.html?user=xml-to-go&repo=xml-to-go.github.io&type=star&count=true&size=large" class="github-stars" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
             </div>
             <div>
-                <p>
-                    This tool instantly converts XML into a Go. Paste a XML structure on the left and the equivalent Go type will be generated to the right, which you can paste into your program. The script has to make some assumptions, so double-check the output!
-                </p>
+                <div> 
+                <!-- <a> Tag:
+
+                    An anchor tag used to create hyperlinks. Here, it functions as a clickable element 
+                    that doesn't navigate to another URL but instead runs JavaScript when clicked.
+
+                href="javascript:void(0);":
+
+                    This href attribute normally specifies the URL to navigate to when 
+                    the link is clicked. However, javascript:void(0); is used to prevent the page 
+                    from navigating anywhere when the link is clicked. It essentially does nothing but ensures 
+                    the link is clickable and can be used to trigger JavaScript events.
+
+                id="sample":
+
+                    The id attribute assigns a unique identifier (sample) to the anchor tag. 
+                    This is commonly used for targeting the element with JavaScript or CSS. -->
                 <p>
                     For an example, try converting XML from the <a href="javascript:void(0);" id="sample">Sample</a>.
                 </p>
@@ -36,12 +50,32 @@
         <tr>
             <th style="width: 45%;">XML</th>
             <th style="width: 10%; font-size: 22px;">&#8594;</th>
-            <th style="width: 45%;">Go <label><input type="checkbox" id="inline" checked disabled>Inline definitions</label><label><input type="checkbox" id="compact" checked>Compact</label><label><input type="checkbox" id="with-json-tags">with JSON tags</label></th>
+            <th style="width: 45%;">Go 
+            
+            <label><input type="checkbox" id="inline" checked disabled>Inline definitions</label>
+            <label><input type="checkbox" id="compact" checked>Compact</label>
+            <label><input type="checkbox" id="with-json-tags">with JSON tags</label></th>
         </tr>
     </table>
     <table>
         <tr>
             <td style="width: 50%;">
+                <!-- id="input":
+
+                The id attribute assigns a unique identifier to the <div>. In this case, 
+                    the id is "input". This ID can be used by CSS for styling or by JavaScript 
+                    to select and manipulate this element programmatically.
+            
+            contenteditable Attribute:
+            
+                The contenteditable attribute is a Boolean attribute that turns the <div> 
+                    into an editable area. When this attribute is present, the content inside
+                    the <div> can be directly modified by the user, similar to how you would type in a text box.
+                Users can type, delete, and format the text within the <div>, making 
+                    it function like a basic text editor without needing to use a form 
+                    element like <input> or <textarea>. -->
+
+
                 <div id="input" contenteditable></div>
             </td>
             <td style="width: 50%;">
