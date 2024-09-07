@@ -33,6 +33,20 @@
 			},
 			"problemMatcher": [],
 			"detail": "Copies wasm_exec.js and builds the Go WASM binary."
+		},
+		{
+			"label": "Run Go Server",
+			"type": "shell",
+			"command": "go run .",
+			"options": {
+				"cwd": "go/server"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"problemMatcher": [],
+			"detail": "Runs the Go server program"
 		}
 	]
 }

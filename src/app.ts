@@ -43,11 +43,13 @@ function doConversion() {
 // The function xmlToGoWasmURL is a JavaScript function that determines the URL from which to 
 // fetch the WebAssembly (Wasm) module depending on the environment in which the code is running. 
 function xmlToGoWasmURL() {
-    console.log("xmlToGoWasmURL", location.pathname)
-    if (location.pathname.startsWith("/home/")) {
+    console.log("xmlToGoWasmURL, location.pathname", location.pathname)
+    if (location.pathname.startsWith("/Users/")) {
+        console.log("local")
         return "http://localhost:8080/xml-to-go.wasm?v1";
     }
 
+    console.log("remote")
     return "https://xml-to-go.github.io/static/js/wasm/xml-to-go.wasm?v1";
 }
 

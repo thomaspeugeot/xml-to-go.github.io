@@ -8,6 +8,7 @@
     "lib": [
       "dom",
       "es2017"
-    ]
-  }
+    ],
+    "outDir": "dist" // Direct the compiled output to a separate directory
+  },
 }

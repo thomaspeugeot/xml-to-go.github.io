@@ -27,7 +27,7 @@ func xmlDataToGoTypeCode(content string, inline, compact, withJSON bool) string 
 		sw     = zek.NewStructWriter(buffer)
 	)
 	sw.Banner = fmt.Sprintf(
-		"generated %s by %s in Ukraine.",
+		"toto generated %s by %s in Ukraine.",
 		time.Now().Format("2006-01-02 15:04:05"),
 		"https://xml-to-go.github.io/",
 	)
@@ -48,6 +48,8 @@ func xmlDataToGoTypeCode(content string, inline, compact, withJSON bool) string 
 
 		return ""
 	}
+
+	source = append(source, []byte("toto")...)
 
 	return string(source)
 }
