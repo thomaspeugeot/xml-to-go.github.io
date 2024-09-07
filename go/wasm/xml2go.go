@@ -11,6 +11,9 @@ import (
 )
 
 func xmlDataToGoTypeCode(content string, inline, compact, withJSON bool) string {
+
+	fmt.Println("xmlDataToGoTypeCode")
+
 	var rootNode = new(zek.Node)
 	_, err := rootNode.ReadFrom(strings.NewReader(content), &zek.ReadOpts{})
 	if err != nil {

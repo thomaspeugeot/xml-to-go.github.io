@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Webpack Build",
+			"type": "shell",
+			"command": "npm run build",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"problemMatcher": [],
+			"detail": "Runs the Webpack build command."
+		},
+		{
+			"label": "Esbuild",
+			"type": "shell",
+			"command": "npm run esbuild",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"problemMatcher": [],
+			"detail": "Runs the Esbuild command."
+		},
+		{
+			"label": "WASM Build",
+			"type": "shell",
+			"command": "cp \"$(go env GOROOT)/misc/wasm/wasm_exec.js\" ./src/wasm/ && GOOS=js GOARCH=wasm go build -o ./static/js/wasm/xml-to-go.wasm ./go/wasm/*.go",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"problemMatcher": [],
+			"detail": "Copies wasm_exec.js and builds the Go WASM binary."
+		}
+	]
+}

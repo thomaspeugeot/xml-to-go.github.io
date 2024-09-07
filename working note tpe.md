@@ -43,8 +43,20 @@ import "./wasm/wasm_exec"
 
 This file wasm_exec.js is a file provided by the GO team.
 
+### Testing 
 
+Something very strange, i change the log in the main.go
 
+```go
+func main() {
+	// Print a message to indicate the start of the Go WebAssembly application.
+	fmt.Println("Golang ffjslkfjslfkjf WebAssembly main 2")
+	// log.Println("Golang WebAssembly main")
+```
 
+and the log output is still 
 
+```
+Golang WebAssembly main
+```
 
