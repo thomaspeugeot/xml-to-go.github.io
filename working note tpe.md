@@ -17,7 +17,7 @@ it works
 </Note>
 ```
 
-## simplification
+## simplification og html
 
 ### strange 
 
@@ -31,7 +31,19 @@ For an example, try converting XML from the <a href="javascript:void(0);" id="sa
 
 We have to ask Yaroslav
 
-## why ?
+## exploration of the control flow
+
+```html
+    <script src="static/js/app.js"></script>
+```
+
+```js
+import "./wasm/wasm_exec"
+```
+
+This file wasm_exec.js is a file provided by the GO team.
+
+
 
 
 
