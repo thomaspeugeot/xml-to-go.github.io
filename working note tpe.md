@@ -19,6 +19,17 @@ it works
 
 ## simplification
 
+### strange 
+
+when i remove this line, it does not work anymore
+
+!!!
+
+```html
+For an example, try converting XML from the <a href="javascript:void(0);" id="sample">Sample</a>
+```
+
+We have to ask Yaroslav
 
 ## why ?
 
